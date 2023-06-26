@@ -3,23 +3,21 @@ import { creations } from "../../data";
 
 export default function Portfolio() {
   return (
-    <div className="creations" id='creations'>
-        <div className="banner">
-          /portfolio
-        </div>
-        <div className="container">
-          {creations.map((d) => (
-            <div className="whole-item">
-              <a href={d.link} target="_blank">
+    <div className="creations" id="creations">
+      <div className="banner">/portfolio</div>
+      <div className="container">
+        {creations.map((item, index) => (
+          <div className="whole-item" key={index}>
+            <a href={item.link} target="_blank" rel="noreferrer">
               <div className="item">
-                <img src={d.img} alt=""></img>
-                <h3>{d.title}</h3>
+                <img src={item.img} alt="" />
+                <h3>{item.title}</h3>
               </div>
-              </a>
-              <span>{d.desc}</span>
-            </div>
-          ))}
-        </div>
+            </a>
+            <span>{item.desc}</span>
+          </div>
+        ))}
+      </div>
     </div>
-  )
+  );
 }

@@ -1,33 +1,38 @@
 {
-  "homepage": "http://realshelby.me/",
-  "name": "personal-website",
-  "version": "0.1.0",
+  "name": "personal-website-v1",
+  "homepage": "./",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.12.3",
-    "@material-ui/icons": "^4.11.2",
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "node-sass": "^7.0.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
-    "react-typist": "^2.0.5",
-    "web-vitals": "^2.1.2"
-  },
+  "description": "first iteration of personal website",
+  "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "test": "standard && node my-tests.js",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realshelby/personal-website-v1.git"
+  },
+  "keywords": [
+    "personal-website-v1"
+  ],
+  "author": "Shelby Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/realshelby/personal-website-v1/issues"
+  },
+  "dependencies": {
+    "@material-ui/icons": "^4.11.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "react-typist": "^2.0.5",
+    "standard": "^17.1.0"
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
