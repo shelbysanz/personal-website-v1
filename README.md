@@ -2,9 +2,8 @@
   <img src="public/favicon.ico" width="100px" height="100px" />
 </p>
 <h4 align="center">
-  realshelby.me - v1
+  personal website - v1
 </h4>
 <p align="center">
-  The first iteration of <a href="http://realshelby.me" target="_blank">realshelby.me</a>
-  built with React.js leveraging Material UI.
+  The first iteration of my personal website built with the React framework.
 </p>
